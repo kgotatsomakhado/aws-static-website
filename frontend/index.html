@@ -1,177 +1,502 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Shumba Makhado | Software Enthusiast</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<body>
+    <title>Shumba Makhado | Software Engineer</title>
 
-<nav>
-  <div class="logo"><a onclick="scrollToTop()">Software Portfolio</a></div>
-  <div class="links">
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </div>
-</nav>
+    <link rel="icon" href="assets/favicon.svg" />
 
-<header class="hero">
-  <h1>Shumba Makhado</h1>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <p>
-    Software & Cloud Enthusiast | Passionate About Digital/Cloud Solutions currently focused on Appdev, Webdev, SSMS, AWS, Azure, CI/CD pipelines and scalable systems.
-  </p>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
-  <div class="meta">
-    AWS Certified · Azure AZ-900 · Final-year Software Engineering Student
-  </div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <a class="btn" href="#projects">View Projects</a>
-</header>
+  <body>
+    <!-- Navigation -->
+    <header class="site-header">
+      <nav class="nav container">
+        <a href="#top" class="logo"> Shumba Makhado </a>
 
-<section id="about">
-  <h2>About</h2>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          <span></span>
+          <span></span>
+        </button>
 
-<p>
-  I am a final-year Software Engineering student with a strong foundation in software engineering, cloud computing, web development, application development, and distributed systems. I enjoy designing and building reliable, scalable, and user-focused software solutions.
-</p>
+        <div class="nav-links" id="navLinks">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
 
-<p>
-  My experience includes developing cloud-based applications using AWS, Azure, Render, and Vercel, implementing CI/CD pipelines, working with serverless architectures, and automating deployment workflows. I also build responsive web applications and software applications using modern development technologies.
-</p>
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero container">
+        <div class="hero-content">
+          <p class="eyebrow">SOFTWARE ENGINEER · CLOUD</p>
 
-<p>
-  In addition, I have hands-on experience with Microsoft SQL Server Management Studio (SSMS), database design, SQL querying, and integrating databases with both websites and desktop applications. I am capable of designing relational databases, connecting them to web and software applications, and developing full-stack solutions that efficiently manage and process data.
-</p>
+          <h1>
+            Software Engineer<br />
+            <span>Cloud-focused.</span>
+          </h1>
 
-<p>
-  My career goal is to become a Software Engineer while specializing in the design, development, and deployment of secure, scalable cloud-based systems. As I gain experience, I aspire to grow into a Cloud Engineer and ultimately progress into a Cloud Solutions Architect role.
-</p>
+          <p class="hero-text">
+            I build software, deploy applications, and work with cloud
+            infrastructure and modern development tools.
+          </p>
 
-</section>
+          <div class="hero-actions">
+            <a href="#projects" class="button button-primary"> View my work </a>
 
-<section id="skills">
-  <h2>Skills</h2>
-    <div class="meta">
-    I have been exposed to the following
-  </div>
+            <a
+              href="https://github.com/makhadoshumba"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="button button-secondary"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
 
-  <div class="skills">
-    <span>AWS</span>
-    <span>Azure</span>
-    <span>Render</span>
-    <span>Vercel</span>
-    <span>CI/CD</span>
-    <span>Python</span>
-    <span>C# (Console App)</span>
-    <span>Git</span>
-    <span>SQL</span>
-    <span>HTML</span>
-    <span>JavaScript</span>
-  </div>
-</section>
+        <!-- Cloud visual -->
+        <div class="cloud-visual" aria-label="Software deployment flow">
+          <div class="cloud-box">
+            <div class="cloud-top">
+              <span class="cloud-dot"></span>
+              <span>DEPLOYMENT FLOW</span>
+            </div>
 
-<section id="certifications">
-  <h2>Certifications</h2>
+            <div class="flow">
+              <div class="flow-item">
+                <strong>01</strong>
+                <span>Code</span>
+              </div>
 
-  <div class="carousel-wrapper">
-    <div class="carousel">
-      <div class="carousel-item">
-        <img src="assets/aws.png"
-             alt="AWS Cloud Practitioner">
-      </div>
+              <div class="flow-line"></div>
 
-      <div class="carousel-item">
-        <img src="assets/az-900.png"
-             alt="Azure AZ-900">
-      </div>
+              <div class="flow-item">
+                <strong>02</strong>
+                <span>CI/CD</span>
+              </div>
 
-      <div class="carousel-item">
-        <img src="assets/greatlearning.png"
-             alt="SQL BASICS">
-      </div>
+              <div class="flow-line"></div>
 
-      <div class="carousel-item">
-        <img src="assets/aws2.png"
-             alt="AWS">
-      </div>
+              <div class="flow-item">
+                <strong>03</strong>
+                <span>Cloud</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    </div>
-  </div>
-</section>
+      <!-- About -->
+      <section class="section container" id="about">
+        <div class="section-heading">
+          <p class="eyebrow">ABOUT</p>
+          <h2>A little about me.</h2>
+        </div>
 
-<section id="projects">
-  <h2>Projects</h2>
+        <div class="about-grid">
+          <div class="about-intro">
+            <p>
+              I'm a Software Engineering graduate interested in building
+              practical software and cloud-based solutions.
+            </p>
+          </div>
 
-  <div class="project">
-    <h3>Azure CI/CD Monitor</h3>
-    <p>Cloud system monitoring deployment pipelines.</p>
-    <a href="https://github.com/makhadoshumba/cloud-ci-cd-monitor" target="_blank">
-      GitHub →
-    </a>
-  </div>
+          <div class="about-copy">
+            <p>
+              My work covers software development, cloud computing, web
+              development, application development and database integration.
+            </p>
 
-  <div class="project">
-    <h3>AWS Static Website</h3>
-    <p>Static portfolio hosted on AWS S3 with CI/CD deployment pipeline.</p>
-    <a href="https://github.com/makhadoshumba/aws-static-website" target="_blank">
-      GitHub →
-    </a>
-  </div>
+            <p>
+              I've worked with AWS and Azure and a few more cloud services,
+              CI/CD pipelines, serverless services, SQL databases and
+              application deployment.
+            </p>
 
-    <div class="project">
-    <h3>Community Portal Website (Full Stack Web App)</h3>
-    <p>Full-stack Mondeor Community Portal, featuring alerts, complaint submission, role-based admin/super-admin dashboards, secure authentication, database integration, and a CI/CD pipeline for seamless production deployment.</p>
-    <a href="https://github.com/makhadoshumba/Community-Portal-Website" target="_blank">
-      GitHub →
-    </a>
-    </div>
+            <p>
+              I'm particularly interested in cloud engineering, scalable
+              systems, automation and the infrastructure behind modern
+              applications.
+            </p>
+          </div>
+        </div>
+      </section>
 
-      <div class="project">
-    <h3>Azure SQL Database Migration</h3>
-    <p>Built a serverless CI/CD monitoring dashboard using Azure Functions and GitHub API to track deployment status in real time and improve pipeline visibility.</p>
-    <a href="https://github.com/makhadoshumba/DB-Migration-From-Local-Server-To-Azure-Sql-Cloud-Server" target="_blank">
-      GitHub →
-    </a>
-  </div>
+      <!-- Skills -->
+      <section class="section section-border container" id="skills">
+        <div class="section-heading">
+          <p class="eyebrow">SKILLS</p>
+          <h2>Technologies I work with.</h2>
+        </div>
 
-  </div>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Cloud & Deployment</h3>
 
-</section>
+            <div class="skill-list">
+              <span>AWS</span>
+              <span>Azure</span>
+              <span>Render</span>
+              <span>Vercel</span>
+              <span>Cloudflare</span>
+              <span>Oracle Cloud</span>
+              <span>GitHub</span>
+            </div>
+          </div>
 
+          <div class="skill-group">
+            <h3>Development</h3>
 
+            <div class="skill-list">
+              <span>Python</span>
+              <span>C#</span>
+              <span>Git</span>
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>SQL</span>
+              <span>YAML</span>
+              <span>Bash</span>
+            </div>
+          </div>
 
-<section id="contact">
-  <h2>Contact</h2>
+          <div class="skill-group">
+            <h3>Databases</h3>
 
-  <div class="contact">
-    <p>Email: makhadoshumba@gmail.com</p>
-    <p>Phone: 067 943 5936</p>
-    <p>
-      GitHub:
-      <a href="https://github.com/makhadoshumba">github.com/makhadoshumba</a>
-    </p>
-    <p>
-      LinkedIn:
-      <a href="https://www.linkedin.com/in/shumba-makhado-1ab6551a8/">linkedin.com/in/shumba-makhado-38631b411</a>
-    </p>
-  </div>
-</section>
+            <div class="skill-list">
+              <span>SQL</span>
+              <span>SQL Server</span>
+              <span>SSMS</span>
+              <span>Azure SQL</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-<footer>
-  © 2026 Shumba Makhado — Cloud Portfolio
-</footer>
+      <!-- Certifications -->
+      <section class="section container" id="certifications">
+        <div class="section-heading">
+          <p class="eyebrow">CERTIFICATIONS</p>
+          <h2>Learning and credentials.</h2>
+        </div>
 
-<button id="backToTop" onclick="scrollToTop()">↑</button>
+        <div class="certifications-grid">
+          <article class="certificate-card">
+            <div class="certificate-image">
+              <img src="assets/aws.png" alt="AWS certification" />
+            </div>
 
-<script src="script.js"></script>
+            <div class="certificate-info">
+              <h3>AWS Certified</h3>
+              <p>Amazon Web Services</p>
+            </div>
+          </article>
 
-</body>
+          <article class="certificate-card">
+            <div class="certificate-image">
+              <img
+                src="assets/az-900.png"
+                alt="Microsoft Azure AZ-900 certification"
+              />
+            </div>
+
+            <div class="certificate-info">
+              <h3>Azure AZ-900</h3>
+              <p>Microsoft Azure Fundamentals</p>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-image">
+              <img
+                src="assets/greatlearning.png"
+                alt="Great Learning certification"
+              />
+            </div>
+
+            <div class="certificate-info">
+              <h3>Great Learning</h3>
+              <p>Technology certification</p>
+            </div>
+          </article>
+
+          <article class="certificate-card">
+            <div class="certificate-image">
+              <img src="assets/aws2.png" alt="AWS certification" />
+            </div>
+
+            <div class="certificate-info">
+              <h3>AWS Learning</h3>
+              <p>Cloud computing</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <!-- Projects -->
+      <section class="section section-border container" id="projects">
+        <div class="section-heading projects-heading">
+          <div>
+            <p class="eyebrow">PROJECTS</p>
+            <h2>Things I've built.</h2>
+          </div>
+
+          <p class="section-note">
+            Software, cloud infrastructure and practical development projects.
+          </p>
+        </div>
+
+        <div class="projects-list">
+          <!-- ARIA -->
+          <article class="project">
+            <div class="project-number">01</div>
+
+            <div class="project-main">
+              <div class="project-title-row">
+                <div>
+                  <h3>ARIA</h3>
+                  <p class="project-subtitle">
+                    Serverless Personal AI Assistant
+                  </p>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://aria-bice-xi.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    Live ↗
+                  </a>
+
+                  <a
+                    href="https://github.com/makhadoshumba/Aria-AI-assistant"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
+              </div>
+
+              <p>
+                A custom AI assistant integrated with the Google Gemini API and
+                Tavily search API. Specific keywords such as “When” trigger
+                real-time web searches to provide up-to-date information.
+              </p>
+
+              <div class="project-tags">
+                <span>Cloudflare Workers</span>
+                <span>Gemini API</span>
+                <span>Tavily</span>
+                <span>Vercel</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- DocSwitch -->
+          <article class="project">
+            <div class="project-number">02</div>
+
+            <div class="project-main">
+              <div class="project-title-row">
+                <div>
+                  <h3>DocSwitch</h3>
+                  <p class="project-subtitle">Document Conversion Website</p>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://docswitch.cloudsurfing.workers.dev/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    Live ↗
+                  </a>
+
+                  <a
+                    href="https://github.com/makhadoshumba/DocSwitch"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
+              </div>
+
+              <p>
+                A document conversion service designed to provide a simple way
+                for students, businesses and professionals to convert documents
+                without requiring accounts or login credentials.
+              </p>
+
+              <div class="project-tags">
+                <span>FastAPI</span>
+                <span>Nginx</span>
+                <span>Oracle VM</span>
+                <span>Cloudflare Pages</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Cashier -->
+          <article class="project">
+            <div class="project-number">03</div>
+
+            <div class="project-main">
+              <div class="project-title-row">
+                <div>
+                  <h3>Cashier Service Program</h3>
+                  <p class="project-subtitle">Python Algorithm</p>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://github.com/makhadoshumba/Py-Programs/blob/main/Cashier%20Service%20Program.py"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
+              </div>
+
+              <p>
+                A Python program that simplifies a basic point-of-sale process
+                by allowing a user to select a product, enter the amount paid
+                and automatically calculate the required change.
+              </p>
+
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Algorithm</span>
+                <span>Logic</span>
+                <span>Console Application</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Azure CI/CD -->
+          <article class="project">
+            <div class="project-number">04</div>
+
+            <div class="project-main">
+              <div class="project-title-row">
+                <div>
+                  <h3>Azure CI/CD Monitoring System</h3>
+                  <p class="project-subtitle">Serverless Cloud Monitoring</p>
+                </div>
+
+                <div class="project-links">
+                  <a
+                    href="https://cicdmonitorfrontend123.z6.web.core.windows.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    Live ↗
+                  </a>
+
+                  <a
+                    href="https://github.com/makhadoshumba/cloud-ci-cd-monitor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    GitHub ↗
+                  </a>
+                </div>
+              </div>
+
+              <p>
+                A real-time serverless CI/CD monitoring dashboard built with
+                Azure Functions and the GitHub API to track pipeline deployment
+                status.
+              </p>
+
+              <div class="project-tags">
+                <span>Azure Functions</span>
+                <span>GitHub Actions</span>
+                <span>Azure Storage</span>
+                <span>CI/CD</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="contact-section container" id="contact">
+        <div class="contact-content">
+          <p class="eyebrow">CONTACT</p>
+
+          <h2>Let's build something useful.</h2>
+
+          <p>
+            I'm open to opportunities, collaborations and projects involving
+            software development and cloud technologies.
+          </p>
+
+          <a href="mailto:makhadoshumba@gmail.com" class="email-link">
+            makhadoshumba@gmail.com
+          </a>
+        </div>
+
+        <div class="contact-links">
+          <a
+            href="https://github.com/makhadoshumba"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub ↗
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/shumba-makhado-1ab6551a8/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a href="tel:0679435936"> 067 943 5936 </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer container">
+      <p>© <span id="year"></span> Shumba Makhado</p>
+
+      <p>Software Engineer · Cloud</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      ↑
+    </button>
+
+    <script src="script.js"></script>
+  </body>
 </html>
