@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* =====================================================
        Simple project interaction
-       ===================================================== */
+       =================================================== */
 
   const projects = document.querySelectorAll(".project");
 
