@@ -13,6 +13,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Show frontend structure
+        run: |
+          echo "===== FRONTEND DIRECTORY ====="
+          find frontend -type f -print
+          echo "=============================="
+
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
@@ -22,6 +28,12 @@ jobs:
 
       - name: Deploy frontend to S3
         run: |
-          aws s3 sync ./frontend s3://shumba-cloud-portfolio \
+          aws s3 sync frontend/ s3://shumba-cloud-portfolio/ \
             --delete \
-            --cache-control "max-age=31536000"
+            --cache-control "no-cache"
+
+      - name: Verify S3 files
+        run: |
+          echo "===== S3 FILES ====="
+          aws s3 ls s3://shumba-cloud-portfolio/ --recursive
+          echo "===================="
